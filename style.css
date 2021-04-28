@@ -22,11 +22,14 @@ body {
     --accent: #FFAF31;
     --faded: #707070;
     --padding-x: 6rem;
+    --padding-x-inset: 12rem;
     --padding-y: 3rem;
     --gap: 2rem;
     --gap-mini: 1rem;
     --gap-double: 4rem;
     --gap-triple: 6rem;
+    /* Border Radius */
+    --radius: 0.5rem;
 }
 
 .bg-dark{
@@ -40,6 +43,24 @@ body {
 
 .bg-accent{
     background-color: var(--accent);
+}
+
+.display-text {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.cta-link-button {
+    display: block;
+    padding: 1rem 3rem;
+    border-radius: var(--radius);
+    background-color: var(--accent);
+    color: white;
+    font-weight: semi-bold;
+    text-decoration: none;
+    text-align: center;
+    width: 50%;
+    margin: 2rem 0;
 }
 
 
@@ -103,3 +124,45 @@ header{
 }
 
 /* End of Header Section */
+
+/* Hero Styles */
+
+#hero {
+    position: relative;
+    overflow: hidden;
+    height: clamp(25rem, 864px, 38rem);
+    color: white;
+    padding: var(--padding-y) var(--padding-x-inset);
+}
+
+#hero #cta {
+    width: 50%;
+}
+
+#hero #cta .display-text {
+    display: block;
+}
+
+#hero img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 70vh;
+    z-index: -1;
+}
+
+#hero #cart-overlay {
+    position: absolute;
+    bottom: -(var(--padding-y));
+    right: var(--padding-x-inset);
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    vertical-align: center;
+    color: var(--dark);
+    border-radius: var(--radius);
+    background-color: var(--white);
+}

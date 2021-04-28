@@ -38,7 +38,14 @@
             </div>
         </div>
     </header>
-    <section>Hero Section</section>
+    <section id="hero">
+        <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/reviews.PNG" ?>" alt="5 Star Review">
+        <div id="cta">
+            <span class="display-text">The ultimate boost for your business</span>
+            <a href="#" class="cta-link-button">Get It Now</a>
+        </div>
+        <span id="cart-overlay">Cart</span>
+    </section>
     <?php wp_footer(); ?>
 </body>
 </html>
