@@ -9,5 +9,97 @@ Author URI: https://www.linkedin.com/in/iraklishengelia/
 */
 
 * {
-    background-color: black;
+    font-size: 25px;
 }
+
+body {
+    margin: 0;
+}
+
+:root {
+    --dark: #1c1c1c;
+    --white: white;
+    --accent: #FFAF31;
+    --faded: #707070;
+    --padding-x: 6rem;
+    --padding-y: 3rem;
+    --gap: 2rem;
+    --gap-mini: 1rem;
+    --gap-double: 4rem;
+    --gap-triple: 6rem;
+}
+
+.bg-dark{
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.bg-dark a{
+    color: var(--white);
+}
+
+.bg-accent{
+    background-color: var(--accent);
+}
+
+
+/* Header Section */
+header{
+    padding: 0;
+    margin: 0;
+}
+
+#sub-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    height: clamp(1rem, 68px, 3rem);
+    padding: 0 var(--padding-x);
+}
+
+#sub-header ul {
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    padding-left: 0;
+    font-size: 0.8rem;
+    gap: var(--gap);
+}
+
+#sub-header ul li a {
+    color: var(--faded);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+#main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--padding-x);
+    height: clamp(2rem, 148px, 6rem);
+}
+
+#main-header img {
+    width: clamp(2rem, 95px, 4rem);
+    height: auto;
+}
+
+#menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    padding-left: 0;
+    font-size: 1rem;
+    font-weight: semi-bold;
+    gap: var(--gap-triple);
+}
+
+#menu ul li a {
+    text-decoration: none;
+}
+
+/* End of Header Section */

@@ -10,7 +10,35 @@
     ?>
 </head>
 <body>
-    <header>Header Goes Here</header>
+    <header>
+        <div id="sub-header">
+            <div id="icons">
+                <ul>
+                    <li><a href="/#">FB</a></li>
+                    <li><a href="/#">IG</a></li>
+                    <li><a href="/#">TW</a></li>
+                </ul>
+            </div>
+            <div id="user">
+                <ul>
+                    <li><a href="/#">Login</a></li>
+                    <li><a href="/#">Sign Up</a></li>
+                    <li><a href="/#">Languages</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main-header" class="bg-dark">
+            <a href="/"><img src="<?php echo get_stylesheet_directory_uri()."/assets/images/logo.svg" ?>" alt="5 Star Review"></a>
+            <div id="menu">
+                <ul>
+                    <li><a href="/#">Main Advantages</a></li>
+                    <li><a href="/#">Services</a></li>
+                    <li><a href="/#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <section>Hero Section</section>
+    <?php wp_footer(); ?>
 </body>
 </html>
