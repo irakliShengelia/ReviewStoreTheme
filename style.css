@@ -1,0 +1,13 @@
+/*
+Theme Name: Review Store
+Text Domain: ReviewTheme
+Version: 1.0
+Description: Custom theme for 5-star-review.com
+Tags: reviews, responsive
+Author: Irakli Shengelia
+Author URI: https://www.linkedin.com/in/iraklishengelia/
+*/
+
+* {
+    background-color: black;
+}
