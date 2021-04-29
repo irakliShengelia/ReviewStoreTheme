@@ -15,6 +15,7 @@ body {
 /* XL Screen */
 
 * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25px;
 }
 
@@ -33,6 +34,7 @@ body {
     /* Border Radius */
     --radius: 0.5rem;
     --display-text: 3.2rem;
+    --header-text: 2rem;
 }
 
 @media screen and (max-width: 1440px){
@@ -40,7 +42,6 @@ body {
         --padding-x: 3rem;
         --padding-x-inset: 6rem;
         --padding-y: 1.5rem;
-        --display-text: 2rem;
     }
 
     * {
@@ -64,6 +65,12 @@ body {
 .display-text {
     font-size: var(--display-text);
     font-weight: bold;
+}
+
+.header-text {
+    font-size: var(--header-text);
+    font-weight: bold;
+    color: var(--dark)
 }
 
 .cta-link-button {
@@ -182,4 +189,24 @@ header{
     color: var(--dark);
     border-radius: var(--radius);
     background-color: var(--white);
+}
+
+/* Advantages Section */
+
+#advantages {
+    padding: var(--padding-y) var(--padding-x-inset);
+    text-align: center;
+}
+
+#advantage-blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--gap-double);
+    margin-top: var(--gap-double);
+}
+
+.advantage-block-icon {
+    width: 7rem;
+    height: 7rem;
 }

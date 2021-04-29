@@ -46,6 +46,27 @@
         </div>
         <span id="cart-overlay">Cart</span>
     </section>
+    <section id="advantages">
+        <h2 class="header-text">Main Advantages</h2>
+        <span>Why Choose Us?</span>
+        <div id="advantage-blocks">
+            <div class="advantage-card">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/fast.png" ?>" class="advantage-block-icon">
+                <h3>Fast</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi doloremque accusamus laudantium cumque cupiditate odit voluptatem exercitationem perspiciatis beatae fuga blanditiis veniam, ipsam explicabo. Quo nostrum iusto suscipit consequatur voluptatem.</p>
+            </div>
+            <div class="advantage-card">
+            <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/affordable.png" ?>" class="advantage-block-icon">
+                <h3>Affordable Pricing</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi doloremque accusamus laudantium cumque cupiditate odit voluptatem exercitationem perspiciatis beatae fuga blanditiis veniam, ipsam explicabo. Quo nostrum iusto suscipit consequatur voluptatem.</p>
+            </div>
+            <div class="advantage-card">
+            <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/secure.png" ?>" class="advantage-block-icon">
+                <h3>Secure Payment</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi doloremque accusamus laudantium cumque cupiditate odit voluptatem exercitationem perspiciatis beatae fuga blanditiis veniam, ipsam explicabo. Quo nostrum iusto suscipit consequatur voluptatem.</p>
+            </div>
+        </div>
+    </section>
     <?php wp_footer(); ?>
 </body>
 </html>
