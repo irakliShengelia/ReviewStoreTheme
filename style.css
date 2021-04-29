@@ -8,12 +8,14 @@ Author: Irakli Shengelia
 Author URI: https://www.linkedin.com/in/iraklishengelia/
 */
 
-* {
-    font-size: 25px;
-}
-
 body {
     margin: 0;
+}
+
+/* XL Screen */
+
+* {
+    font-size: 25px;
 }
 
 :root {
@@ -30,6 +32,20 @@ body {
     --gap-triple: 6rem;
     /* Border Radius */
     --radius: 0.5rem;
+    --display-text: 3.2rem;
+}
+
+@media screen and (max-width: 1440px){
+    :root {
+        --padding-x: 3rem;
+        --padding-x-inset: 6rem;
+        --padding-y: 1.5rem;
+        --display-text: 2rem;
+    }
+
+    * {
+        font-size: 16px;
+    }
 }
 
 .bg-dark{
@@ -46,7 +62,7 @@ body {
 }
 
 .display-text {
-    font-size: 3.2rem;
+    font-size: var(--display-text);
     font-weight: bold;
 }
 
@@ -75,7 +91,7 @@ header{
     align-items: center;
     justify-content: space-between;
     margin: 0;
-    height: clamp(1rem, 68px, 3rem);
+    height: clamp(1rem, 6vh, 3rem);
     padding: 0 var(--padding-x);
 }
 
@@ -129,8 +145,10 @@ header{
 
 #hero {
     position: relative;
+    display: flex;
+    align-items: center;
     overflow: hidden;
-    height: clamp(25rem, 864px, 38rem);
+    height: clamp(40vh, 50vh, 60vh);
     color: white;
     padding: var(--padding-y) var(--padding-x-inset);
 }
@@ -156,12 +174,11 @@ header{
 
 #hero #cart-overlay {
     position: absolute;
-    bottom: -(var(--padding-y));
+    bottom: var(--padding-y);
     right: var(--padding-x-inset);
     width: 4rem;
     height: 4rem;
     text-align: center;
-    vertical-align: center;
     color: var(--dark);
     border-radius: var(--radius);
     background-color: var(--white);
