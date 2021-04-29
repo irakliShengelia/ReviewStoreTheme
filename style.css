@@ -257,9 +257,16 @@ header{
 .price-block .price-subtitle {
     display: block;
     color: var(--faded);
+    font-size: .8rem;
+}
+
+.service-rating {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var(--gap-mini);
 }
 
 .rating-star {
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.2rem;
+    height: 1.2rem;
 }
