@@ -42,11 +42,11 @@
         <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/reviews.PNG" ?>" alt="5 Star Review">
         <div id="cta">
             <span class="display-text">The ultimate boost for your business</span>
-            <a href="#" class="cta-link-button">Get It Now</a>
+            <a href="#" class="cta-link-button w-50">Get It Now</a>
         </div>
         <span id="cart-overlay">Cart</span>
     </section>
-    <section id="advantages">
+    <section id="advantages" class="container-inset">
         <h2 class="header-text">Main Advantages</h2>
         <span>Why Choose Us?</span>
         <div id="advantage-blocks">
@@ -64,6 +64,50 @@
             <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/secure.png" ?>" class="advantage-block-icon">
                 <h3>Secure Payment</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi doloremque accusamus laudantium cumque cupiditate odit voluptatem exercitationem perspiciatis beatae fuga blanditiis veniam, ipsam explicabo. Quo nostrum iusto suscipit consequatur voluptatem.</p>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="container-inset">
+        <h2 class="header-text">Services</h2>
+        <div id="service-blocks">
+            <div class="service-block">
+                <h3>Basic</h3>
+                <div class="price-block">€ 99,00<span class="price-subtitle">month</span></div>
+                <p>max. 50 reviews per month</p>
+                <div class="service-rating">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star-faded.png" ?>" class="rating-star">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star-faded.png" ?>" class="rating-star">
+                </div>
+                <a href="#" class="cta-link-button">Book now</a>
+            </div>
+            <div class="service-block">
+                <h3>Basic</h3>
+                <div class="price-block">€ 199,00<span class="price-subtitle">month</span></div>
+                <p>max. 200 reviews per month</p>
+                <div class="service-rating">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star-faded.png" ?>" class="rating-star">
+                </div>
+                <a href="#" class="cta-link-button">Book now</a>
+            </div>
+            <div class="service-block">
+                <h3>Basic</h3>
+                <div class="price-block">€ 499,00<span class="price-subtitle">month</span></div>
+                <p>max. 500 reviews per month</p>
+                <div class="service-rating">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                </div>
+                <a href="#" class="cta-link-button">Book now</a>
             </div>
         </div>
     </section>
