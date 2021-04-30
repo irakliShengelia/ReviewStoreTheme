@@ -354,3 +354,27 @@ header{
 .submit-button:hover {
     background-color: var(--accent-hover);
 }
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark);
+    margin-top: var(--gap-double);
+}
+
+#footer-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--gap-mini)
+}
+
+.footer-menu {
+    list-style: none;
+    padding-left: 0;
+}
