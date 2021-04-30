@@ -13,21 +13,26 @@
     <h2 class="header-text">Main Advantages</h2>
     <span>Why Choose Us?</span>
     <div id="advantage-blocks">
+        <?php while ( have_posts() ) : the_post(); ?>
+        <?php $advantage_1 = get_field('advantage_1'); ?>
         <div class="advantage-card">
-            <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/fast.png" ?>" class="advantage-block-icon">
-            <h3>Fast</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi doloremque accusamus laudantium cumque cupiditate odit voluptatem exercitationem perspiciatis beatae fuga blanditiis veniam, ipsam explicabo. Quo nostrum iusto suscipit consequatur voluptatem.</p>
+            <img src="<?php echo $advantage_1["icon"] ?>" class="advantage-block-icon">
+            <h3><?php echo $advantage_1["name"] ?></h3>
+            <p><?php echo $advantage_1["description"] ?></p>
         </div>
+        <?php $advantage_2 = get_field('advantage_2'); ?>
         <div class="advantage-card">
-        <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/affordable.png" ?>" class="advantage-block-icon">
-            <h3>Affordable Pricing</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi doloremque accusamus laudantium cumque cupiditate odit voluptatem exercitationem perspiciatis beatae fuga blanditiis veniam, ipsam explicabo. Quo nostrum iusto suscipit consequatur voluptatem.</p>
+            <img src="<?php echo $advantage_2["icon"] ?>" class="advantage-block-icon">
+            <h3><?php echo $advantage_2["name"] ?></h3>
+            <p><?php echo $advantage_2["description"] ?></p>
         </div>
+        <?php $advantage_3 = get_field('advantage_3'); ?>
         <div class="advantage-card">
-        <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/secure.png" ?>" class="advantage-block-icon">
-            <h3>Secure Payment</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi doloremque accusamus laudantium cumque cupiditate odit voluptatem exercitationem perspiciatis beatae fuga blanditiis veniam, ipsam explicabo. Quo nostrum iusto suscipit consequatur voluptatem.</p>
+            <img src="<?php echo $advantage_3["icon"] ?>" class="advantage-block-icon">
+            <h3><?php echo $advantage_3["name"] ?></h3>
+            <p><?php echo $advantage_3["description"] ?></p>
         </div>
+        <?php endwhile; // end of the loop. ?>
     </div>
 </section>
 <section id="services" class="container-inset">
