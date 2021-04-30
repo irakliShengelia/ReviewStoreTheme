@@ -38,45 +38,21 @@
 <section id="services" class="container-inset">
     <h2 class="header-text">Services</h2>
     <div id="service-blocks">
-        <div class="service-block">
-            <h3>Basic</h3>
-            <div class="price-block">€ 99,00<span class="price-subtitle">month</span></div>
-            <p>max. 50 reviews per month</p>
-            <div class="service-rating">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star-faded.png" ?>" class="rating-star">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star-faded.png" ?>" class="rating-star">
-            </div>
-            <a href="#" class="cta-link-button">Book now</a>
-        </div>
-        <div class="service-block">
-            <h3>Basic</h3>
-            <div class="price-block">€ 199,00<span class="price-subtitle">month</span></div>
-            <p>max. 200 reviews per month</p>
-            <div class="service-rating">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star-faded.png" ?>" class="rating-star">
-            </div>
-            <a href="#" class="cta-link-button">Book now</a>
-        </div>
-        <div class="service-block">
-            <h3>Basic</h3>
-            <div class="price-block">€ 499,00<span class="price-subtitle">month</span></div>
-            <p>max. 500 reviews per month</p>
-            <div class="service-rating">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-            </div>
-            <a href="#" class="cta-link-button">Book now</a>
-        </div>
+        <?php
+            $args = array(
+                'post_type' => 'product',
+                'posts_per_page' => 3
+                );
+            $loop = new WP_Query( $args );
+            if ( $loop->have_posts() ) {
+                while ( $loop->have_posts() ) : $loop->the_post();
+                    wc_get_template_part( 'content', 'product' );
+                endwhile;
+            } else {
+                echo __( 'No products found' );
+            }
+            wp_reset_postdata();
+        ?>
     </div>
 </section>
 <section id="contact" class="container-inset text-white">

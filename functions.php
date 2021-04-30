@@ -6,6 +6,11 @@ function reviewstore_theme_support(){
     add_theme_support( 'title-tag' );
 }
 
+function reviewstore_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' ); // <<<< here
+}
+add_action( 'after_setup_theme', 'reviewstore_add_woocommerce_support' );
+
 add_action('after_setup_theme','reviewstore_theme_support');
 
 
@@ -16,5 +21,10 @@ function reviewstore_register_styles(){
 }
 
 add_action( 'wp_enqueue_scripts', 'reviewstore_register_styles');
+
+
+/* Woocommerce ovverides */
+
+
 
 ?>
