@@ -1,172 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5 Star Review - Boost your online reputation</title>
-    <?php
-    wp_head();
-    ?>
-</head>
-<body>
-    <header>
-        <div id="sub-header">
-            <div id="icons">
-                <ul>
-                    <li><a href="/#">FB</a></li>
-                    <li><a href="/#">IG</a></li>
-                    <li><a href="/#">TW</a></li>
-                </ul>
-            </div>
-            <div id="user">
-                <ul>
-                    <li><a href="/#">Login</a></li>
-                    <li><a href="/#">Sign Up</a></li>
-                    <li><a href="/#">Languages</a></li>
-                </ul>
-            </div>
+<?php 
+    get_header();
+?>
+<section id="hero">
+    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/reviews.PNG" ?>" alt="5 Star Review">
+    <div id="cta">
+        <span class="display-text">The ultimate boost for your business</span>
+        <a href="#" class="cta-link-button w-50">Get It Now</a>
+    </div>
+    <span id="cart-overlay">Cart</span>
+</section>
+<section id="advantages" class="container-inset">
+    <h2 class="header-text">Main Advantages</h2>
+    <span>Why Choose Us?</span>
+    <div id="advantage-blocks">
+        <div class="advantage-card">
+            <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/fast.png" ?>" class="advantage-block-icon">
+            <h3>Fast</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi doloremque accusamus laudantium cumque cupiditate odit voluptatem exercitationem perspiciatis beatae fuga blanditiis veniam, ipsam explicabo. Quo nostrum iusto suscipit consequatur voluptatem.</p>
         </div>
-        <div id="main-header" class="bg-dark">
-            <a href="/"><img src="<?php echo get_stylesheet_directory_uri()."/assets/images/logo.svg" ?>" alt="5 Star Review"></a>
-            <div id="menu">
-                <ul>
-                    <li><a href="/#">Main Advantages</a></li>
-                    <li><a href="/#">Services</a></li>
-                    <li><a href="/#">Contact</a></li>
-                </ul>
-            </div>
+        <div class="advantage-card">
+        <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/affordable.png" ?>" class="advantage-block-icon">
+            <h3>Affordable Pricing</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi doloremque accusamus laudantium cumque cupiditate odit voluptatem exercitationem perspiciatis beatae fuga blanditiis veniam, ipsam explicabo. Quo nostrum iusto suscipit consequatur voluptatem.</p>
         </div>
-    </header>
-    <section id="hero">
-        <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/reviews.PNG" ?>" alt="5 Star Review">
-        <div id="cta">
-            <span class="display-text">The ultimate boost for your business</span>
-            <a href="#" class="cta-link-button w-50">Get It Now</a>
+        <div class="advantage-card">
+        <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/secure.png" ?>" class="advantage-block-icon">
+            <h3>Secure Payment</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi doloremque accusamus laudantium cumque cupiditate odit voluptatem exercitationem perspiciatis beatae fuga blanditiis veniam, ipsam explicabo. Quo nostrum iusto suscipit consequatur voluptatem.</p>
         </div>
-        <span id="cart-overlay">Cart</span>
-    </section>
-    <section id="advantages" class="container-inset">
-        <h2 class="header-text">Main Advantages</h2>
-        <span>Why Choose Us?</span>
-        <div id="advantage-blocks">
-            <div class="advantage-card">
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/fast.png" ?>" class="advantage-block-icon">
-                <h3>Fast</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi doloremque accusamus laudantium cumque cupiditate odit voluptatem exercitationem perspiciatis beatae fuga blanditiis veniam, ipsam explicabo. Quo nostrum iusto suscipit consequatur voluptatem.</p>
+    </div>
+</section>
+<section id="services" class="container-inset">
+    <h2 class="header-text">Services</h2>
+    <div id="service-blocks">
+        <div class="service-block">
+            <h3>Basic</h3>
+            <div class="price-block">€ 99,00<span class="price-subtitle">month</span></div>
+            <p>max. 50 reviews per month</p>
+            <div class="service-rating">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star-faded.png" ?>" class="rating-star">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star-faded.png" ?>" class="rating-star">
             </div>
-            <div class="advantage-card">
-            <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/affordable.png" ?>" class="advantage-block-icon">
-                <h3>Affordable Pricing</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi doloremque accusamus laudantium cumque cupiditate odit voluptatem exercitationem perspiciatis beatae fuga blanditiis veniam, ipsam explicabo. Quo nostrum iusto suscipit consequatur voluptatem.</p>
-            </div>
-            <div class="advantage-card">
-            <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/secure.png" ?>" class="advantage-block-icon">
-                <h3>Secure Payment</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi doloremque accusamus laudantium cumque cupiditate odit voluptatem exercitationem perspiciatis beatae fuga blanditiis veniam, ipsam explicabo. Quo nostrum iusto suscipit consequatur voluptatem.</p>
-            </div>
+            <a href="#" class="cta-link-button">Book now</a>
         </div>
-    </section>
-    <section id="services" class="container-inset">
-        <h2 class="header-text">Services</h2>
-        <div id="service-blocks">
-            <div class="service-block">
-                <h3>Basic</h3>
-                <div class="price-block">€ 99,00<span class="price-subtitle">month</span></div>
-                <p>max. 50 reviews per month</p>
-                <div class="service-rating">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star-faded.png" ?>" class="rating-star">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star-faded.png" ?>" class="rating-star">
-                </div>
-                <a href="#" class="cta-link-button">Book now</a>
+        <div class="service-block">
+            <h3>Basic</h3>
+            <div class="price-block">€ 199,00<span class="price-subtitle">month</span></div>
+            <p>max. 200 reviews per month</p>
+            <div class="service-rating">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star-faded.png" ?>" class="rating-star">
             </div>
-            <div class="service-block">
-                <h3>Basic</h3>
-                <div class="price-block">€ 199,00<span class="price-subtitle">month</span></div>
-                <p>max. 200 reviews per month</p>
-                <div class="service-rating">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star-faded.png" ?>" class="rating-star">
-                </div>
-                <a href="#" class="cta-link-button">Book now</a>
-            </div>
-            <div class="service-block">
-                <h3>Basic</h3>
-                <div class="price-block">€ 499,00<span class="price-subtitle">month</span></div>
-                <p>max. 500 reviews per month</p>
-                <div class="service-rating">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                    <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
-                </div>
-                <a href="#" class="cta-link-button">Book now</a>
-            </div>
+            <a href="#" class="cta-link-button">Book now</a>
         </div>
-    </section>
-    <section id="contact" class="container-inset text-white">
-        <img class="bg-image" src="<?php echo get_stylesheet_directory_uri()."/assets/images/contact.png" ?>" alt="5 Star Review">
-        <h3 class="header-text text-white">Contact</h3>
-        <div id="contact-columns">
-            <div id="contact-prompt">
-                <p>Simply fill out the form and tell us the key data of your planned campaign</p>
-                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/google-review.png" ?>" alt="Google Reviews">
+        <div class="service-block">
+            <h3>Basic</h3>
+            <div class="price-block">€ 499,00<span class="price-subtitle">month</span></div>
+            <p>max. 500 reviews per month</p>
+            <div class="service-rating">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/star.png" ?>" class="rating-star">
             </div>
-            <form id="contact-form" autocomplete="off">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="E-mail Address">
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <button type="submit" class="submit-button w-50">Send</button>
-            </form>
+            <a href="#" class="cta-link-button">Book now</a>
         </div>
-    </section>
-    <footer class="container text-white">
-        <a href="/"><img src="<?php echo get_stylesheet_directory_uri()."/assets/images/logo.svg" ?>" alt="5 Star Review"></a>
-        <div id="footer-blocks">
-            <div class="footer-block">
-                <h3>Information</h3>
-                <ul class="footer-menu">
-                    <li>FAQ</li>
-                    <li>Order process</li>
-                    <li>Why buy reviews</li>
-                    <li>Is buying reviews legal?</li>
-                </ul>
-            </div>
-            <div class="footer-block">
-                <h3>Reviews</h3>
-                <ul class="footer-menu">
-                    <li>google reviews</li>
-                    <li>Facebook reviews</li>
-                    <li>Dealership reviews</li>
-                    <li>other portals</li>
-                </ul>
-            </div>
-            <div class="footer-block">
-                <h3>Service</h3>
-                <ul class="footer-menu">
-                    <li>My account</li>
-                    <li>Conditions</li>
-                    <li>Imprint</li>
-                </ul>
-            </div>
-            <div class="footer-block">
-                <h3>Contact</h3>
-                <ul class="footer-menu">
-                    <li>Phone: + 12 345 678 9000</li>
-                    <li>Email: support@5-star-review.com</li>
-                    <li>Website: https://5-star-review.com</li>
-                </ul>
-            </div>
+    </div>
+</section>
+<section id="contact" class="container-inset text-white">
+    <img class="bg-image" src="<?php echo get_stylesheet_directory_uri()."/assets/images/contact.png" ?>" alt="5 Star Review">
+    <h3 class="header-text text-white">Contact</h3>
+    <div id="contact-columns">
+        <div id="contact-prompt">
+            <p>Simply fill out the form and tell us the key data of your planned campaign</p>
+            <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/google-review.png" ?>" alt="Google Reviews">
         </div>
-    </footer>
-    <?php wp_footer(); ?>
-</body>
-</html>
+        <form id="contact-form" autocomplete="off">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="E-mail Address">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button type="submit" class="submit-button w-50">Send</button>
+        </form>
+    </div>
+</section>
+
+<?php 
+    get_footer();
+?>
