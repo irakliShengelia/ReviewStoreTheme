@@ -23,6 +23,7 @@ body {
     --dark: #1c1c1c;
     --white: white;
     --accent: #FFAF31;
+    --accent-hover: #fdc161;
     --faded: #707070;
     --padding-x: 6rem;
     --padding-x-inset: 12rem;
@@ -73,6 +74,10 @@ body {
     color: var(--dark)
 }
 
+.text-white {
+    color: white;
+}
+
 .cta-link-button {
     display: block;
     padding: 1rem 3rem;
@@ -83,6 +88,10 @@ body {
     text-decoration: none;
     text-align: center;
     margin: 2rem 0;
+}
+
+.cta-link-button:hover {
+    background-color: var(--accent-hover);
 }
 
 .w-50 {
@@ -179,14 +188,14 @@ header{
     display: block;
 }
 
-#hero img {
+#hero img, .bg-image {
     position: absolute;
     left: 0;
     top: 0;
     object-fit: cover;
     object-position: center;
     width: 100%;
-    height: 70vh;
+    height: 100%;
     z-index: -1;
 }
 
@@ -269,4 +278,79 @@ header{
 .rating-star {
     width: 1.2rem;
     height: 1.2rem;
+}
+
+/* Contact Section */
+
+#contact {
+    position: relative;
+    background-color: var(--dark);
+    overflow: hidden;
+    text-align: center;
+}
+
+#contact h3, #contact div {
+    z-index: 2;
+    position: relative;
+}
+
+#contact .bg-image {
+    opacity: 50%;
+    z-index: 1;
+}
+
+#contact-columns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contact-prompt {
+    width: clamp(30%,40%,100%);
+    padding: 0 var(--padding-x);
+}
+
+#contact-prompt p {
+    font-size: 2rem;
+}
+
+#contact-prompt img {
+    width: clamp(150px,200px, 300px);
+    height: auto;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#contact-form input, #contact-form textarea{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.submit-button {
+    display: block;
+    padding: 1rem 3rem;
+    border-radius: var(--radius);
+    background-color: var(--accent);
+    color: white;
+    font-weight: semi-bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.submit-button:hover {
+    background-color: var(--accent-hover);
 }

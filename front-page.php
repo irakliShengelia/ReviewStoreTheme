@@ -111,6 +111,23 @@
             </div>
         </div>
     </section>
+    <section id="contact" class="container-inset text-white">
+        <img class="bg-image" src="<?php echo get_stylesheet_directory_uri()."/assets/images/contact.png" ?>" alt="5 Star Review">
+        <h3 class="header-text text-white">Contact</h3>
+        <div id="contact-columns">
+            <div id="contact-prompt">
+                <p>Simply fill out the form and tell us the key data of your planned campaign</p>
+                <img src="<?php echo get_stylesheet_directory_uri()."/assets/images/google-review.png" ?>" alt="Google Reviews">
+            </div>
+            <form id="contact-form" autocomplete="off">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="E-mail Address">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit" class="submit-button w-50">Send</button>
+            </form>
+        </div>
+    </section>
     <?php wp_footer(); ?>
 </body>
 </html>
