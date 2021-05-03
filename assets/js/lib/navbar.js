@@ -25,6 +25,11 @@ const navbar = () => {
 	window.onload = function() {
 		document.getElementById("hamburger").addEventListener("click",toggleNav);
 		document.getElementById("close-hamburger").addEventListener("click",toggleNav);
+		var menuItems = document.getElementsByClassName("menu-item");
+		console.log(menuItems)
+		Array.from(menuItems).forEach(node => {
+			node.addEventListener("click",toggleNav)
+		})
     };
 }
 export default navbar;
