@@ -36,6 +36,7 @@ body {
     --radius: 0.5rem;
     --display-text: 3.2rem;
     --header-text: 2rem;
+    --shadow:  0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 @media screen and (max-width: 1440px){
@@ -68,6 +69,12 @@ body {
     font-weight: bold;
 }
 
+@media screen and (max-width: 768px){
+    .display-text {
+        font-size: 2rem;
+    }
+}
+
 .header-text {
     font-size: var(--header-text);
     font-weight: bold;
@@ -88,6 +95,15 @@ body {
     text-decoration: none;
     text-align: center;
     margin: 2rem 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 7668px){
+    .cta-link-button {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem 2rem;
+    }
 }
 
 .cta-link-button:hover {
@@ -233,6 +249,17 @@ header{
     padding: var(--padding-y) var(--padding-x-inset);
 }
 
+@media screen and (max-width: 768px){
+    #hero {
+        padding: var(--padding-y);
+        text-align: center;
+        overflow: visible;
+    }
+    #hero #cta {
+        width: 100% !important;
+    }
+}
+
 #hero #cta {
     width: 50%;
 }
@@ -262,6 +289,14 @@ header{
     color: var(--dark);
     border-radius: var(--radius);
     background-color: var(--white);
+    box-shadow: var(--shadow);
+}
+
+@media screen and (max-width: 768px){
+    #hero #cart-overlay {
+        bottom: calc(-1*var(--padding-y));
+        right: var(--padding-x);
+    }
 }
 
 /* Advantages Section */
