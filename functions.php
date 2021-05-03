@@ -4,6 +4,8 @@
 function reviewstore_theme_support(){
     //Adds Support for title tag in wp_head()
     add_theme_support( 'title-tag' );
+    //Adds Menu submenu in Appereance
+    add_theme_support( 'menus' );
 }
 
 function reviewstore_add_woocommerce_support() {

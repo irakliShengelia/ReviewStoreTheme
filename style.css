@@ -136,6 +136,13 @@ header{
     color: var(--faded);
     text-decoration: none;
     font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+#sub-header ul li a img {
+    width: 1rem;
+    height: 1rem;
 }
 
 #main-header {
