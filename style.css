@@ -98,7 +98,7 @@ body {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 7668px){
+@media screen and (max-width: 768px){
     .cta-link-button {
         margin-left: auto;
         margin-right: auto;
@@ -120,6 +120,12 @@ body {
 
 .container-inset {
     padding: var(--padding-y) var(--padding-x-inset);
+}
+
+@media screen and (max-width: 768px){
+    .container-inset {
+        padding: var(--padding-y);
+    }    
 }
 
 
@@ -414,12 +420,27 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    gap: var(--gap-double);
 }
 
 #contact-prompt {
-    width: clamp(30%,40%,100%);
-    padding: 0 var(--padding-x);
+    width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    #contact-columns {
+        flex-direction: column;
+    }
+    #contact-prompt {
+        width: 100% !important;
+        padding: 0;
+    }
+    #contact-prompt p {
+        font-size: 1.5rem !important;
+    }
+    #contact-form {
+        width: 100% !important;
+    }
 }
 
 #contact-prompt p {
@@ -436,6 +457,7 @@ header{
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
+    width: 60%;
 }
 
 #contact-form input, #contact-form textarea{
