@@ -384,6 +384,13 @@ footer {
     margin-top: var(--gap-double);
 }
 
+@media screen and (max-width: 768px) {
+    footer, #footer-blocks {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
 #footer-blocks {
     display: flex;
     flex-wrap: wrap;
