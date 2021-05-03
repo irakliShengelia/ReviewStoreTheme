@@ -181,6 +181,12 @@ header{
     #menu, #sub-header {
         display: none;
     }
+    #menu .mobile-active{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
     #hamburger, #user{
         display: block;
         width: 1rem !important;
@@ -252,6 +258,12 @@ header{
     height: 7rem;
 }
 
+@media screen and (max-width: 768px){
+    #advantage-blocks {
+        flex-direction: column;
+    }
+}
+
 /* Services Section */
 
 #services {
@@ -311,6 +323,12 @@ header{
 .rating-star {
     width: 1.2rem;
     height: 1.2rem;
+}
+
+@media screen and (max-width: 768px){
+    #service-blocks {
+        flex-direction: column;
+    }
 }
 
 /* Contact Section */
