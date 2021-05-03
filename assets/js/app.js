@@ -1,3 +1,3 @@
-import navbar from './lib/navbar';
+import navbar from './lib/navbar.js';
 
 navbar();

@@ -24,6 +24,13 @@ function reviewstore_register_styles(){
 
 add_action( 'wp_enqueue_scripts', 'reviewstore_register_styles');
 
+// function reviewstore_register_scripts(){
+    
+//     $version = wp_get_theme()->get( 'Version' );
+//     wp_enqueue_script( 'reviewstore_register_scripts', get_stylesheet_directory_uri()."/assets/js/app.js", array(), $vesrion, 'all',true);
+// }
+
+// add_action( 'wp_enqueue_scripts', 'reviewstore_register_scripts');
 
 /* Woocommerce ovverides */
 

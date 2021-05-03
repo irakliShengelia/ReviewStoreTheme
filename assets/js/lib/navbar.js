@@ -6,14 +6,14 @@ const navbar = () => {
 		showNav = !showNav;
 		if(showNav){
 			//document.getElementById("site-navigation").style = "display:block;";
-			document.getElementById("navbar").classList = "overlay-header dark active";
+			document.getElementById("menu").classList = "mobile-active";
 			// Stop Scrolling
 			document.querySelector('body').style = "max-height: 100vh; overflow: hidden;";
 			if(content){
 				content.style = "display: none;";
 			}
 		}else{
-            document.getElementById("navbar").classList = "overlay-header dark";
+            document.getElementById("menu").classList = "";
 		    // Stop Scrolling
 			if(content){
 				content.style = "";
@@ -24,6 +24,7 @@ const navbar = () => {
 
 	window.onload = function() {
 		document.getElementById("hamburger").addEventListener("click",toggleNav);
+		document.getElementById("close-hamburger").addEventListener("click",toggleNav);
     };
 }
 export default navbar;

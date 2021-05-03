@@ -18,7 +18,7 @@
                     <li><a href="/#"><img src="<?php echo get_stylesheet_directory_uri()."/assets/images/twitter.png" ?>" alt="twitter logo"></a></li>
                 </ul>
             </div>
-            <div id="user">
+            <div id="user-section">
                 <ul>
                     <li><a href="/#">Login</a></li>
                     <li><a href="/#">Sign Up</a></li>
@@ -31,6 +31,8 @@
             <a href="/"><img src="<?php echo get_stylesheet_directory_uri()."/assets/images/logo.svg" ?>" alt="5 Star Review"></a>
             <img id="user" src="<?php echo get_stylesheet_directory_uri().'/assets/images/user.png' ?>" alt="User" />
             <div id="menu">
+                <!-- Wordpress Menu -->
+                <img src="<?php echo get_stylesheet_directory_uri().'/assets/images/close.png' ?>" id="close-hamburger" alt="close" />
                 <?php 
                     wp_nav_menu(
                         array(
@@ -42,6 +44,11 @@
                     );
                 
                 ?>
+                <ul id="mobile-social">
+                    <li><a href="/#"><img src="<?php echo get_stylesheet_directory_uri()."/assets/images/facebook-white.png" ?>" alt="facebook logo"></a></li>
+                    <li><a href="/#"><img src="<?php echo get_stylesheet_directory_uri()."/assets/images/instagram-white.png" ?>" alt="instagram logo"></a></li>
+                    <li><a href="/#"><img src="<?php echo get_stylesheet_directory_uri()."/assets/images/twitter-white.png" ?>" alt="twitter logo"></a></li>
+                </ul>
             </div>
         </div>
     </header>
