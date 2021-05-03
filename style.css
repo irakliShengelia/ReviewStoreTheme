@@ -173,6 +173,21 @@ header{
     text-decoration: none;
 }
 
+#hamburger, #user{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #menu, #sub-header {
+        display: none;
+    }
+    #hamburger, #user{
+        display: block;
+        width: 1rem !important;
+        height: 1rem !important;
+    }
+}
+
 /* End of Header Section */
 
 /* Hero Styles */

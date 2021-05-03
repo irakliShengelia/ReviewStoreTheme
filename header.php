@@ -27,7 +27,9 @@
             </div>
         </div>
         <div id="main-header" class="bg-dark">
+            <img id="hamburger" src="<?php echo get_stylesheet_directory_uri().'/assets/images/hamburger.png' ?>" alt="Menu" />
             <a href="/"><img src="<?php echo get_stylesheet_directory_uri()."/assets/images/logo.svg" ?>" alt="5 Star Review"></a>
+            <img id="user" src="<?php echo get_stylesheet_directory_uri().'/assets/images/user.png' ?>" alt="User" />
             <div id="menu">
                 <?php 
                     wp_nav_menu(
