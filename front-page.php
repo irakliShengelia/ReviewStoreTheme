@@ -37,23 +37,29 @@
 </section>
 <section id="services" class="container-inset">
     <h2 class="header-text">Services</h2>
-    <div id="service-blocks">
+    <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
         <?php
-            $args = array(
-                'post_type' => 'product',
-                'posts_per_page' => 3,
-                'order' => 'ASC'
-                );
-            $loop = new WP_Query( $args );
-            if ( $loop->have_posts() ) {
-                while ( $loop->have_posts() ) : $loop->the_post();
-                    wc_get_template_part( 'content', 'product' );
-                endwhile;
-            } else {
-                echo __( 'No products found' );
-            }
-            wp_reset_postdata();
-        ?>
+                $args = array(
+                    'post_type' => 'product',
+                    'posts_per_page' => 3,
+                    'order' => 'ASC'
+                    );
+                $loop = new WP_Query( $args );
+                if ( $loop->have_posts() ) {
+                    while ( $loop->have_posts() ) : $loop->the_post();
+                        wc_get_template_part( 'content', 'product' );
+                    endwhile;
+                } else {
+                    echo __( 'No products found' );
+                }
+                wp_reset_postdata();
+            ?>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
     </div>
 </section>
 <section id="contact" class="container-inset text-white">
@@ -73,7 +79,21 @@
         </form>
     </div>
 </section>
-
+<script>
+      var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1,
+          pagination: {
+              el: '.swiper-pagination'
+            },
+          breakpoints: {
+              768: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                  pagination: false
+              }
+          }
+      });
+</script>
 <?php 
     get_footer();
 ?>
